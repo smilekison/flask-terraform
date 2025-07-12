@@ -16,8 +16,9 @@ resource "aws_instance" "flask_app" {
               sudo apt install python3-pip -y
               sudo pip3 install psutil flask
               git clone https://github.com/smilekison/flask-terraform.git
+              cd flask-terraform
               sudo docker build -t myflaskappv1 .
-              sudo docker run -p 5000:5000 myflaskappv1
+              sudo docker run -d -p 5000:5000 myflaskappv1
               EOF
 
 
