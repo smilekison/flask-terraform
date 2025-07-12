@@ -1,2 +1,4 @@
 project-1
 __pycache__
+terraform-files/.terraform
+terraform-files/.terraform.lock.hcl
